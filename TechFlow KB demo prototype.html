@@ -1,0 +1,785 @@
+<div style="font-family:Segoe UI, Roboto, sans-serif; color:#1a1a1a; max-width:1200px; margin:0 auto;">
+
+  <!-- Header Section -->
+  <div style="background:linear-gradient(135deg, #0052CC 0%, #0747A6 100%); padding:30px; border-radius:8px; color:white; margin-bottom:25px;">
+    <h1 style="color:white; font-weight:700; margin-bottom:8px; font-size:32px;">
+      <img src="https://cdn-icons-png.flaticon.com/512/1005/1005141.png" width="32" height="32" style="vertical-align:middle; margin-right:10px;"> TechFlow Support Knowledge Base
+    </h1>
+    <p style="font-size:18px; color:#E6FCFF; margin-bottom:0;">
+      Welcome to the TechFlow Knowledge Base your one-stop hub for help articles, troubleshooting steps, and FAQs.
+    </p>
+  </div>
+
+  <!-- Quick Stats -->
+  <div style="display:flex; justify-content:space-between; background:#F4F5F7; padding:15px; border-radius:6px; margin-bottom:25px;">
+    <div style="text-align:center;">
+      <div style="font-size:24px; font-weight:700; color:#0052CC;">250+</div>
+      <div style="font-size:14px; color:#5E6C84;">Articles</div>
+    </div>
+    <div style="text-align:center;">
+      <div style="font-size:24px; font-weight:700; color:#36B37E;">98%</div>
+      <div style="font-size:14px; color:#5E6C84;">Resolution Rate</div>
+    </div>
+    <div style="text-align:center;">
+      <div style="font-size:24px; font-weight:700; color:#FF5630;">< 2h</div>
+      <div style="font-size:14px; color:#5E6C84;">Avg. Response</div>
+    </div>
+  </div>
+
+  <!-- Interactive Tabs Navigation -->
+  <h2 style="color:#172B4D; border-bottom:2px solid #0052CC; padding-bottom:8px;">
+    <img src="https://cdn-icons-png.flaticon.com/512/709/709586.png" width="24" height="24" style="vertical-align:middle; margin-right:8px;"> Quick Access
+  </h2>
+  <div style="background:#F4F5F7; padding:15px; border-radius:8px; margin-bottom:25px;">
+    <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:15px;">
+      <button onclick="showTab('accounts')" id="accounts-tab" style="background:#0052CC; color:white; border:none; padding:12px 20px; border-radius:6px; cursor:pointer; font-weight:600; flex:1; min-width:120px; display:flex; align-items:center; justify-content:center; gap:8px;">
+        <img src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png" width="20" height="20"> Accounts
+      </button>
+      <button onclick="showTab('crm')" id="crm-tab" style="background:#E4E6EA; color:#42526E; border:none; padding:12px 20px; border-radius:6px; cursor:pointer; font-weight:600; flex:1; min-width:120px; display:flex; align-items:center; justify-content:center; gap:8px;">
+        <img src="https://cdn-icons-png.flaticon.com/512/9421/9421024.png" width="20" height="20"> CRM Features
+      </button>
+      <button onclick="showTab('technical')" id="technical-tab" style="background:#E4E6EA; color:#42526E; border:none; padding:12px 20px; border-radius:6px; cursor:pointer; font-weight:600; flex:1; min-width:120px; display:flex; align-items:center; justify-content:center; gap:8px;">
+        <img src="https://cdn-icons-png.flaticon.com/512/1055/1055666.png" width="20" height="20"> Technical
+      </button>
+      <button onclick="showTab('billing')" id="billing-tab" style="background:#E4E6EA; color:#42526E; border:none; padding:12px 20px; border-radius:6px; cursor:pointer; font-weight:600; flex:1; min-width:120px; display:flex; align-items:center; justify-content:center; gap:8px;">
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135690.png" width="20" height="20"> Billing
+      </button>
+      <button onclick="showTab('faqs')" id="faqs-tab" style="background:#E4E6EA; color:#42526E; border:none; padding:12px 20px; border-radius:6px; cursor:pointer; font-weight:600; flex:1; min-width:120px; display:flex; align-items:center; justify-content:center; gap:8px;">
+        <img src="https://cdn-icons-png.flaticon.com/512/9421/9421044.png" width="20" height="20"> FAQs
+      </button>
+      <button onclick="showTab('support')" id="support-tab" style="background:#E4E6EA; color:#42526E; border:none; padding:12px 20px; border-radius:6px; cursor:pointer; font-weight:600; flex:1; min-width:120px; display:flex; align-items:center; justify-content:center; gap:8px;">
+        <img src="https://cdn-icons-png.flaticon.com/512/9421/9421080.png" width="20" height="20"> Get Help
+      </button>
+    </div>
+
+    <!-- Accounts Tab Content -->
+    <div id="accounts-content" style="display:block;">
+      <h3 style="color:#172B4D; margin-top:0; display:flex; align-items:center; gap:8px;">
+        <img src="https://cdn-icons-png.flaticon.com/512/2889/2889676.png" width="24" height="24"> Account & Security Help
+      </h3>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:15px;">
+        <a href="#password-reset" style="background:white; padding:15px; border-radius:6px; text-decoration:none; color:#0052CC; border-left:4px solid #0052CC; display:block; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
+          <div style="font-weight:600; margin-bottom:5px; display:flex; align-items:center; gap:8px;">
+            <img src="https://cdn-icons-png.flaticon.com/512/3064/3064155.png" width="18" height="18"> Reset Your Password
+          </div>
+          <div style="font-size:13px; color:#666;">Step-by-step password recovery</div>
+        </a>
+        <a href="/display/SUPPORT/Account+Locked" style="background:white; padding:15px; border-radius:6px; text-decoration:none; color:#0052CC; border-left:4px solid #0052CC; display:block; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
+          <div style="font-weight:600; margin-bottom:5px; display:flex; align-items:center; gap:8px;">
+            <img src="https://cdn-icons-png.flaticon.com/512/992/992700.png" width="18" height="18"> Unlock Account
+          </div>
+          <div style="font-size:13px; color:#666;">Account locked out solutions</div>
+        </a>
+        <a href="/display/SUPPORT/Two+Factor+Setup" style="background:white; padding:15px; border-radius:6px; text-decoration:none; color:#0052CC; border-left:4px solid #0052CC; display:block; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
+          <div style="font-weight:600; margin-bottom:5px; display:flex; align-items:center; gap:8px;">
+            <img src="https://cdn-icons-png.flaticon.com/512/159/159832.png" width="18" height="18"> 2FA Setup
+          </div>
+          <div style="font-size:13px; color:#666;">Enable two-factor authentication</div>
+        </a>
+        <a href="/display/SUPPORT/Update+Profile" style="background:white; padding:15px; border-radius:6px; text-decoration:none; color:#0052CC; border-left:4px solid #0052CC; display:block; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
+          <div style="font-weight:600; margin-bottom:5px; display:flex; align-items:center; gap:8px;">
+            <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" width="18" height="18"> Update Profile
+          </div>
+          <div style="font-size:13px; color:#666;">Change personal information</div>
+        </a>
+      </div>
+    </div>
+
+    <!-- CRM Features Tab Content -->
+    <div id="crm-content" style="display:none;">
+      <h3 style="color:#172B4D; margin-top:0; display:flex; align-items:center; gap:8px;">
+        <img src="https://cdn-icons-png.flaticon.com/512/9421/9421024.png" width="24" height="24"> CRM Features & Guides
+      </h3>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:15px;">
+        <a href="/display/SUPPORT/Dashboard+Guide" style="background:white; padding:15px; border-radius:6px; text-decoration:none; color:#36B37E; border-left:4px solid #36B37E; display:block; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
+          <div style="font-weight:600; margin-bottom:5px; display:flex; align-items:center; gap:8px;">
+            <img src="https://cdn-icons-png.flaticon.com/512/9421/9421067.png" width="18" height="18"> Dashboard Overview
+          </div>
+          <div style="font-size:13px; color:#666;">Navigate the CRM dashboard</div>
+        </a>
+        <a href="/display/SUPPORT/Contact+Management" style="background:white; padding:15px; border-radius:6px; text-decoration:none; color:#36B37E; border-left:4px solid #36B37E; display:block; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
+          <div style="font-weight:600; margin-bottom:5px; display:flex; align-items:center; gap:8px;">
+            <img src="https://cdn-icons-png.flaticon.com/512/9421/9421125.png" width="18" height="18"> Manage Contacts
+          </div>
+          <div style="font-size:13px; color:#666;">Add and organize contacts</div>
+        </a>
+        <a href="/display/SUPPORT/Sales+Pipeline" style="background:white; padding:15px; border-radius:6px; text-decoration:none; color:#36B37E; border-left:4px solid #36B37E; display:block; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
+          <div style="font-weight:600; margin-bottom:5px; display:flex; align-items:center; gap:8px;">
+            <img src="https://cdn-icons-png.flaticon.com/512/9421/9421199.png" width="18" height="18"> Sales Pipeline
+          </div>
+          <div style="font-size:13px; color:#666;">Manage deals and opportunities</div>
+        </a>
+        <a href="/display/SUPPORT/Report+Generation" style="background:white; padding:15px; border-radius:6px; text-decoration:none; color:#36B37E; border-left:4px solid #36B37E; display:block; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
+          <div style="font-weight:600; margin-bottom:5px; display:flex; align-items:center; gap:8px;">
+            <img src="https://cdn-icons-png.flaticon.com/512/9421/9421164.png" width="18" height="18"> Generate Reports
+          </div>
+          <div style="font-size:13px; color:#666;">Create and export reports</div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Technical Tab Content -->
+    <div id="technical-content" style="display:none;">
+      <h3 style="color:#172B4D; margin-top:0; display:flex; align-items:center; gap:8px;">
+        <img src="https://cdn-icons-png.flaticon.com/512/1055/1055666.png" width="24" height="24"> Technical Setup & Support
+      </h3>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:15px;">
+        <a href="#email-connection" style="background:white; padding:15px; border-radius:6px; text-decoration:none; color:#6554C0; border-left:4px solid #6554C0; display:block; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
+          <div style="font-weight:600; margin-bottom:5px; display:flex; align-items:center; gap:8px;">
+            <img src="https://cdn-icons-png.flaticon.com/512/9421/9421108.png" width="18" height="18"> Connect Personal Email
+          </div>
+          <div style="font-size:13px; color:#666;">Link Gmail/Outlook to HubSpot</div>
+        </a>
+        <a href="/display/SUPPORT/VPN+Setup" style="background:white; padding:15px; border-radius:6px; text-decoration:none; color:#6554C0; border-left:4px solid #6554C0; display:block; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
+          <div style="font-weight:600; margin-bottom:5px; display:flex; align-items:center; gap:8px;">
+            <img src="https://cdn-icons-png.flaticon.com/512/9421/9421216.png" width="18" height="18"> VPN Setup
+          </div>
+          <div style="font-size:13px; color:#666;">Configure VPN connection</div>
+        </a>
+        <a href="/display/SUPPORT/Software+Installation" style="background:white; padding:15px; border-radius:6px; text-decoration:none; color:#6554C0; border-left:4px solid #6554C0; display:block; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
+          <div style="font-weight:600; margin-bottom:5px; display:flex; align-items:center; gap:8px;">
+            <img src="https://cdn-icons-png.flaticon.com/512/9421/9421182.png" width="18" height="18"> Software Install
+          </div>
+          <div style="font-size:13px; color:#666;">Install required software</div>
+        </a>
+        <a href="/display/SUPPORT/Browser+Support" style="background:white; padding:15px; border-radius:6px; text-decoration:none; color:#6554C0; border-left:4px solid #6554C0; display:block; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
+          <div style="font-weight:600; margin-bottom:5px; display:flex; align-items:center; gap:8px;">
+            <img src="https://cdn-icons-png.flaticon.com/512/9421/9421073.png" width="18" height="18"> Browser Support
+          </div>
+          <div style="font-size:13px; color:#666;">Supported browsers & settings</div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Billing Tab Content -->
+    <div id="billing-content" style="display:none;">
+      <h3 style="color:#172B4D; margin-top:0; display:flex; align-items:center; gap:8px;">
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135690.png" width="24" height="24"> Billing & Payment Help
+      </h3>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:15px;">
+        <a href="#failed-payment" style="background:white; padding:15px; border-radius:6px; text-decoration:none; color:#FF5630; border-left:4px solid #FF5630; display:block; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
+          <div style="font-weight:600; margin-bottom:5px; display:flex; align-items:center; gap:8px;">
+            <img src="https://cdn-icons-png.flaticon.com/512/9421/9421113.png" width="18" height="18"> Failed Payment Guide
+          </div>
+          <div style="font-size:13px; color:#666;">Resolve payment issues</div>
+        </a>
+        <a href="/display/SUPPORT/Update+Payment+Method" style="background:white; padding:15px; border-radius:6px; text-decoration:none; color:#FF5630; border-left:4px solid #FF5630; display:block; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
+          <div style="font-weight:600; margin-bottom:5px; display:flex; align-items:center; gap:8px;">
+            <img src="https://cdn-icons-png.flaticon.com/512/9421/9421207.png" width="18" height="18"> Update Payment Method
+          </div>
+          <div style="font-size:13px; color:#666;">Change card details</div>
+        </a>
+        <a href="/display/SUPPORT/View+Invoices" style="background:white; padding:15px; border-radius:6px; text-decoration:none; color:#FF5630; border-left:4px solid #FF5630; display:block; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
+          <div style="font-weight:600; margin-bottom:5px; display:flex; align-items:center; gap:8px;">
+            <img src="https://cdn-icons-png.flaticon.com/512/9421/9421141.png" width="18" height="18"> View Invoices
+          </div>
+          <div style="font-size:13px; color:#666;">Access billing history</div>
+        </a>
+        <a href="/display/SUPPORT/Billing+Support" style="background:white; padding:15px; border-radius:6px; text-decoration:none; color:#FF5630; border-left:4px solid #FF5630; display:block; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
+          <div style="font-weight:600; margin-bottom:5px; display:flex; align-items:center; gap:8px;">
+            <img src="https://cdn-icons-png.flaticon.com/512/9421/9421080.png" width="18" height="18"> Contact Billing
+          </div>
+          <div style="font-size:13px; color:#666;">Billing team assistance</div>
+        </a>
+      </div>
+    </div>
+
+    <!-- FAQs Tab Content -->
+    <div id="faqs-content" style="display:none;">
+      <h3 style="color:#172B4D; margin-top:0; display:flex; align-items:center; gap:8px;">
+        <img src="https://cdn-icons-png.flaticon.com/512/9421/9421044.png" width="24" height="24"> Frequently Asked Questions
+      </h3>
+      
+      <!-- Search FAQs -->
+      <div style="background:white; padding:15px; border-radius:6px; margin-bottom:20px; box-shadow:0 2px 4px rgba(0,0,0,0.1); display:flex; align-items:center; gap:10px;">
+        <img src="https://cdn-icons-png.flaticon.com/512/9421/9421170.png" width="20" height="20">
+        <input type="text" id="faqSearch" placeholder="Search FAQs..." style="width:100%; padding:12px; border:1px solid #DFE1E6; border-radius:6px; font-size:16px;" onkeyup="searchFAQs()">
+      </div>
+
+      <!-- FAQ Categories -->
+      <div class="faq-category">
+        <h4 style="color:#0052CC; border-bottom:1px solid #DFE1E6; padding-bottom:8px; display:flex; align-items:center; gap:8px;">
+          <img src="https://cdn-icons-png.flaticon.com/512/2889/2889676.png" width="20" height="20"> Accounts
+        </h4>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <img src="https://cdn-icons-png.flaticon.com/512/9421/9421132.png" width="16" height="16" style="margin-right:8px;"> How do I reset my password?
+          </div>
+          <div class="faq-answer">Use the "Forgot Password" link on the login page. Check your email and follow the reset steps. Ensure your new password meets security requirements.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <img src="https://cdn-icons-png.flaticon.com/512/9421/9421132.png" width="16" height="16" style="margin-right:8px;"> Why am I locked out of my account?
+          </div>
+          <div class="faq-answer">After 3 failed login attempts, your account automatically locks for 15 minutes for security. Wait or contact support for immediate assistance.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <img src="https://cdn-icons-png.flaticon.com/512/9421/9421132.png" width="16" height="16" style="margin-right:8px;"> How to update my profile details?
+          </div>
+          <div class="faq-answer">Go to Account Settings → Edit Profile. You can update your name, contact information, and preferences there.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <img src="https://cdn-icons-png.flaticon.com/512/9421/9421132.png" width="16" height="16" style="margin-right:8px;"> Can I change my registered email?
+          </div>
+          <div class="faq-answer">Only administrators can update login emails through the CRM Admin Console. Contact your system administrator for email changes.</div>
+        </div>
+      </div>
+
+      <div class="faq-category">
+        <h4 style="color:#36B37E; border-bottom:1px solid #DFE1E6; padding-bottom:8px; display:flex; align-items:center; gap:8px;">
+          <img src="https://cdn-icons-png.flaticon.com/512/9421/9421024.png" width="20" height="20"> CRM Features
+        </h4>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <img src="https://cdn-icons-png.flaticon.com/512/9421/9421132.png" width="16" height="16" style="margin-right:8px;"> Why can't I add a new contact?
+          </div>
+          <div class="faq-answer">Check your permission level. Clear your browser cache or try refreshing the page. Ensure you have the correct user role for contact management.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <img src="https://cdn-icons-png.flaticon.com/512/9421/9421132.png" width="16" height="16" style="margin-right:8px;"> How to export customer data?
+          </div>
+          <div class="faq-answer">Navigate to Reports → Export → Select CSV format. Choose the data fields you want to export and download the file.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <img src="https://cdn-icons-png.flaticon.com/512/9421/9421132.png" width="16" height="16" style="margin-right:8px;"> How to assign leads to a sales rep?
+          </div>
+          <div class="faq-answer">Go to Leads → Select the specific lead → Click "Assign to User" and choose the appropriate sales representative.</div>
+        </div>
+      </div>
+
+      <div class="faq-category">
+        <h4 style="color:#FF5630; border-bottom:1px solid #DFE1E6; padding-bottom:8px; display:flex; align-items:center; gap:8px;">
+          <img src="https://cdn-icons-png.flaticon.com/512/3135/3135690.png" width="20" height="20"> Billing
+        </h4>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <img src="https://cdn-icons-png.flaticon.com/512/9421/9421132.png" width="16" height="16" style="margin-right:8px;"> How do I update my payment method?
+          </div>
+          <div class="faq-answer">Go to Billing → Payment Settings → Update card details. Ensure your card information is current and valid.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <img src="https://cdn-icons-png.flaticon.com/512/9421/9421132.png" width="16" height="16" style="margin-right:8px;"> Where can I view invoices?
+          </div>
+          <div class="faq-answer">Access Billing → Invoices section to view and download PDF copies of all your invoices.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <img src="https://cdn-icons-png.flaticon.com/512/9421/9421132.png" width="16" height="16" style="margin-right:8px;"> What should I do if my payment fails?
+          </div>
+          <div class="faq-answer">Verify your card's validity and available funds. If issues persist, contact our finance team at finance@techflow.com for assistance.</div>
+        </div>
+      </div>
+
+      <div class="faq-category">
+        <h4 style="color:#6554C0; border-bottom:1px solid #DFE1E6; padding-bottom:8px; display:flex; align-items:center; gap:8px;">
+          <img src="https://cdn-icons-png.flaticon.com/512/1055/1055666.png" width="20" height="20"> Technical Setup
+        </h4>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <img src="https://cdn-icons-png.flaticon.com/512/9421/9421132.png" width="16" height="16" style="margin-right:8px;"> Why is the CRM not loading?
+          </div>
+          <div class="faq-answer">Check your internet connection and try using supported browsers like Chrome, Edge, or Firefox (latest two versions).</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <img src="https://cdn-icons-png.flaticon.com/512/9421/9421132.png" width="16" height="16" style="margin-right:8px;"> Which browsers are supported?
+          </div>
+          <div class="faq-answer">Chrome, Edge, and Firefox (latest two versions). Ensure you're using an updated browser for optimal performance.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <img src="https://cdn-icons-png.flaticon.com/512/9421/9421132.png" width="16" height="16" style="margin-right:8px;"> How do I enable browser cookies?
+          </div>
+          <div class="faq-answer">Go to Browser Settings → Privacy & Security → Enable cookies. This is required for proper system functionality.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <img src="https://cdn-icons-png.flaticon.com/512/9421/9421132.png" width="16" height="16" style="margin-right:8px;"> How to clear cache/cookies?
+          </div>
+          <div class="faq-answer">In Chrome: Settings → Privacy and Security → Clear browsing data. Select "Cookies and site data" and "Cached images and files."</div>
+        </div>
+      </div>
+
+      <div class="faq-category">
+        <h4 style="color:#00B8D9; border-bottom:1px solid #DFE1E6; padding-bottom:8px; display:flex; align-items:center; gap:8px;">
+          <img src="https://cdn-icons-png.flaticon.com/512/9421/9421095.png" width="20" height="20"> Error Codes
+        </h4>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <img src="https://cdn-icons-png.flaticon.com/512/9421/9421132.png" width="16" height="16" style="margin-right:8px;"> Error 401 – Unauthorized
+          </div>
+          <div class="faq-answer">Log out and log back in. Your authentication token may have expired. Ensure you have proper permissions.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <img src="https://cdn-icons-png.flaticon.com/512/9421/9421132.png" width="16" height="16" style="margin-right:8px;"> Error 500 – Server Error
+          </div>
+          <div class="faq-answer">Try again in 5 minutes. If persistent, report the issue to support as it indicates a server-side problem.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <img src="https://cdn-icons-png.flaticon.com/512/9421/9421132.png" width="16" height="16" style="margin-right:8px;"> Error 404 – Page Not Found
+          </div>
+          <div class="faq-answer">The link may be broken. Check the URL for accuracy or navigate from the main dashboard.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <img src="https://cdn-icons-png.flaticon.com/512/9421/9421132.png" width="16" height="16" style="margin-right:8px;"> Error 7001 – API Timeout
+          </div>
+          <div class="faq-answer">Retry the connection. This may indicate network latency or temporary service interruption.</div>
+        </div>
+      </div>
+
+      <div class="faq-category">
+        <h4 style="color:#FF8B00; border-bottom:1px solid #DFE1E6; padding-bottom:8px; display:flex; align-items:center; gap:8px;">
+          <img src="https://cdn-icons-png.flaticon.com/512/9421/9421108.png" width="20" height="20"> Email & Notifications
+        </h4>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <img src="https://cdn-icons-png.flaticon.com/512/9421/9421132.png" width="16" height="16" style="margin-right:8px;"> Why am I not receiving notifications?
+          </div>
+          <div class="faq-answer">Check your Email Preferences settings and spam folder. Ensure notifications are enabled for your account.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <img src="https://cdn-icons-png.flaticon.com/512/9421/9421132.png" width="16" height="16" style="margin-right:8px;"> How do I disable daily summary emails?
+          </div>
+          <div class="faq-answer">Go to Settings → Notifications → Toggle off "Daily Summary" to stop receiving daily email summaries.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Support Tab Content -->
+    <div id="support-content" style="display:none;">
+      <h3 style="color:#172B4D; margin-top:0; display:flex; align-items:center; gap:8px;">
+        <img src="https://cdn-icons-png.flaticon.com/512/9421/9421080.png" width="24" height="24"> Get Help & Support
+      </h3>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:15px;">
+        <a href="https://techflow.freshdesk.com/support/tickets/new" style="background:white; padding:15px; border-radius:6px; text-decoration:none; color:#FF5630; border-left:4px solid #FF5630; display:block; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
+          <div style="font-weight:600; margin-bottom:5px; display:flex; align-items:center; gap:8px;">
+            <img src="https://cdn-icons-png.flaticon.com/512/9421/9421158.png" width="18" height="18"> Log Ticket in Freshdesk
+          </div>
+          <div style="font-size:13px; color:#666;">Create a new support ticket</div>
+        </a>
+        <a href="https://techflow.freshdesk.com/support/tickets" style="background:white; padding:15px; border-radius:6px; text-decoration:none; color:#FF5630; border-left:4px solid #FF5630; display:block; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
+          <div style="font-weight:600; margin-bottom:5px; display:flex; align-items:center; gap:8px;">
+            <img src="https://cdn-icons-png.flaticon.com/512/9421/9421164.png" width="18" height="18"> Check Ticket Status
+          </div>
+          <div style="font-size:13px; color:#666;">Track your support requests</div>
+        </a>
+        <a href="/display/SUPPORT/Emergency+Support" style="background:white; padding:15px; border-radius:6px; text-decoration:none; color:#FF5630; border-left:4px solid #FF5630; display:block; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
+          <div style="font-weight:600; margin-bottom:5px; display:flex; align-items:center; gap:8px;">
+            <img src="https://cdn-icons-png.flaticon.com/512/9421/9421101.png" width="18" height="18"> Emergency Support
+          </div>
+          <div style="font-size:13px; color:#666;">24/7 critical issue support</div>
+        </a>
+        <a href="https://techflow.freshdesk.com/a/tickets/filters/unresolved" style="background:white; padding:15px; border-radius:6px; text-decoration:none; color:#FF5630; border-left:4px solid #FF5630; display:block; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
+          <div style="font-weight:600; margin-bottom:5px; display:flex; align-items:center; gap:8px;">
+            <img src="https://cdn-icons-png.flaticon.com/512/9421/9421147.png" width="18" height="18"> My Open Tickets
+          </div>
+          <div style="font-size:13px; color:#666;">View all unresolved tickets</div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Featured Articles Section -->
+  <h2 style="color:#172B4D; border-bottom:2px solid #36B37E; padding-bottom:8px; display:flex; align-items:center; gap:8px;">
+    <img src="https://cdn-icons-png.flaticon.com/512/9421/9421036.png" width="24" height="24"> Featured Articles
+  </h2>
+  <table style="width:100%; border-collapse:collapse; text-align:center; margin-top:10px; margin-bottom:30px; box-shadow:0 2px 8px rgba(0,0,0,0.1); border-radius:8px; overflow:hidden;">
+    <tr>
+      <td style="padding:25px; border:1px solid #EEE; background:linear-gradient(135deg, #FFF, #F8F9FF);">
+        <img src="https://cdn-icons-png.flaticon.com/512/3064/3064155.png" width="48" height="48" style="margin-bottom:10px;">
+        <a href="#password-reset" style="font-weight:600; font-size:18px; color:#0052CC; text-decoration:none; display:block; margin-bottom:8px;">Reset Your Password</a>
+        <p style="color:#666; margin:0; font-size:14px;">Step-by-step password recovery guide with security requirements</p>
+      </td>
+      <td style="padding:25px; border:1px solid #EEE; background:linear-gradient(135deg, #FFF, #F9FFF8);">
+        <img src="https://cdn-icons-png.flaticon.com/512/9421/9421113.png" width="48" height="48" style="margin-bottom:10px;">
+        <a href="#failed-payment" style="font-weight:600; font-size:18px; color:#0052CC; text-decoration:none; display:block; margin-bottom:8px;">Failed Payment Guide</a>
+        <p style="color:#666; margin:0; font-size:14px;">Resolve payment issues and update payment methods</p>
+      </td>
+      <td style="padding:25px; border:1px solid #EEE; background:linear-gradient(135deg, #FFF, #FFF8F8);">
+        <img src="https://cdn-icons-png.flaticon.com/512/9421/9421108.png" width="48" height="48" style="margin-bottom:10px;">
+        <a href="#email-connection" style="font-weight:600; font-size:18px; color:#0052CC; text-decoration:none; display:block; margin-bottom:8px;">Connect Personal Email</a>
+        <p style="color:#666; margin:0; font-size:14px;">Link Gmail/Outlook to send & log emails in HubSpot</p>
+      </td>
+    </tr>
+  </table>
+
+  <!-- Password Reset Article -->
+  <div id="password-reset" style="background:white; padding:30px; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1); margin-bottom:30px; border-left:4px solid #0052CC;">
+    <h2 style="color:#0052CC; margin-top:0; display:flex; align-items:center; gap:8px;">
+      <img src="https://cdn-icons-png.flaticon.com/512/3064/3064155.png" width="28" height="28"> Reset Your Corporate Network Password (Self-Service)
+    </h2>
+    
+    <div style="background:#F8F9FF; padding:20px; border-radius:6px; margin-bottom:20px;">
+      <h4 style="margin-top:0; color:#0052CC;">Before You Start</h4>
+      <ul style="margin-bottom:0;">
+        <li>Ensure you have access to your registered email</li>
+        <li>Have your employee ID ready (if applicable)</li>
+        <li>Use a private, secure network</li>
+      </ul>
+    </div>
+
+    <h3 style="color:#172B4D;">Step 1: Access the Password Reset Portal</h3>
+    <p>Navigate to the Self-Service Password Management Portal at <strong>[Link to TechFlow Password Portal]</strong></p>
+    
+    <div style="background:#F4F5F7; padding:15px; border-radius:6px; margin:15px 0; border-left:3px solid #0052CC;">
+      <strong>Tip:</strong> Save this link for future use.
+    </div>
+
+    <h3 style="color:#172B4D;">Step 2: Create a New Password</h3>
+    <p>Enter your old password if applicable (when you just want to change your current one)</p>
+
+    <h3 style="color:#172B4D;">Step 3: Password Requirements</h3>
+    <div style="background:#FFF4E5; padding:15px; border-radius:6px; margin:15px 0;">
+      <strong>Password must meet these criteria:</strong>
+      <ul>
+        <li>At least 12 characters long</li>
+        <li>One lowercase character</li>
+        <li>One uppercase character</li>
+        <li>One number, symbol, or whitespace character</li>
+        <li>Do not reuse your last 5 passwords</li>
+      </ul>
+    </div>
+
+    <h3 style="color:#172B4D;">Step 4: Confirm and Log In</h3>
+    <p>Enter your new password again to confirm. Click 'Continue'. Wait 1 minute for the change to propagate across the network. Log in to your computer and applications using your new password.</p>
+
+    <div style="background:#FFEBE5; padding:20px; border-radius:6px; margin-top:25px;">
+      <h4 style="color:#DE350B; margin-top:0;">Troubleshooting & Help</h4>
+      <p><strong>Error during verification?</strong> Ensure your security answers/contact info are up to date in the profile manager.</p>
+      <p><strong>Still locked out?</strong> Create an 'Urgent Password Reset' ticket by emailing <strong>support@techflow.com</strong> from a personal device, and an agent will contact you within 15 minutes.</p>
+    </div>
+  </div>
+
+  <!-- Failed Payment Article -->
+  <div id="failed-payment" style="background:white; padding:30px; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1); margin-bottom:30px; border-left:4px solid #FF5630;">
+    <h2 style="color:#FF5630; margin-top:0; display:flex; align-items:center; gap:8px;">
+      <img src="https://cdn-icons-png.flaticon.com/512/9421/9421113.png" width="28" height="28"> Failed Payment or Payment Difficulty
+    </h2>
+
+    <div style="background:#FFF4E5; padding:20px; border-radius:6px; margin-bottom:20px;">
+      <h4 style="margin-top:0; color:#FF5630;">Before You Start</h4>
+      <ul style="margin-bottom:0;">
+        <li>Verify you have Super Admin or "Manage payments and subscriptions" permissions</li>
+        <li>Have your payment method details ready</li>
+        <li>Ensure you're using the correct billing account</li>
+      </ul>
+    </div>
+
+    <h3 style="color:#172B4D;">Step 1: Verify Admin/Permission Status</h3>
+    <p>Confirm you have Super Admin or Manage payments and subscriptions permissions in your TechFlow account, as only these users can update payment details.</p>
+
+    <h3 style="color:#172B4D;">Step 2: Navigate to Billing Settings</h3>
+    <p>Click your account name in the top right, then select <strong>Account & Billing</strong>. Go to the <strong>Payment Methods</strong> tab.</p>
+
+    <h3 style="color:#172B4D;">Step 3: Review and Update the Card</h3>
+    <p>Check the current payment method for any typos in the card number, expiration date, or billing address. If you are certain the card details are correct, delete and re-add the card to force a fresh authorization with the payment processor.</p>
+
+    <h3 style="color:#172B4D;">Step 4: Contact Your Bank (External Step)</h3>
+    <p>Call your bank or credit card company to confirm if they are blocking a charge from "TechFlow" and authorize the transaction.</p>
+
+    <div style="background:#FFFAE5; padding:20px; border-radius:6px; margin-top:25px;">
+      <h4 style="color:#FF8B00; margin-top:0;">Contact TechFlow Billing</h4>
+      <p><strong>Action:</strong> If the card is confirmed as active and authorized by your bank, email the TechFlow Billing Team at <strong>billing@techflow.com</strong> for further assistance with the payment attempt.</p>
+    </div>
+  </div>
+
+  <!-- Connect Personal Email Article -->
+  <div id="email-connection" style="background:white; padding:30px; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1); margin-bottom:30px; border-left:4px solid #6554C0;">
+    <h2 style="color:#6554C0; margin-top:0; display:flex; align-items:center; gap:8px;">
+      <img src="https://cdn-icons-png.flaticon.com/512/9421/9421108.png" width="28" height="28"> Connect Personal Email (Gmail / Outlook) to Send & Log Emails
+    </h2>
+
+    <div style="background:#F8F7FF; padding:20px; border-radius:6px; margin-bottom:20px;">
+      <p><strong>Note:</strong> You can connect your personal inbox to TechFlow without being an admin — unless your company restricts mailbox connections.</p>
+    </div>
+
+    <h3 style="color:#172B4D;">Step 1: Access Settings</h3>
+    <p>In your TechFlow account, click the settings <img src="https://cdn-icons-png.flaticon.com/512/9421/9421182.png" width="16" height="16" style="vertical-align:middle"> icon in the top navigation bar.</p>
+
+    <h3 style="color:#172B4D;">Step 2: Navigate to General Settings</h3>
+    <p>Navigate to the left sidebar menu, click <strong>General</strong>.</p>
+
+    <h3 style="color:#172B4D;">Step 3: Click the Email Tab</h3>
+    <p>Click the <strong>Email</strong> tab in the settings menu.</p>
+
+    <h3 style="color:#172B4D;">Step 4: Connect Personal Email</h3>
+    <p>Scroll down to the email section and click <strong>Connect personal email</strong>.</p>
+
+    <h3 style="color:#172B4D;">Step 5: Connect Your Inbox</h3>
+    <p>Click <strong>Connect your inbox</strong>.</p>
+
+    <h3 style="color:#172B4D;">Step 6: Enter Email Address</h3>
+    <p>In the text field, enter your email address.</p>
+
+    <h3 style="color:#172B4D;">Step 7: Provider Connection</h3>
+    <p>TechFlow will attempt to recommend which email provider you should connect with. Click <strong>Connect to [your email account]</strong>, then continue the steps below for your specific provider.</p>
+
+    <h3 style="color:#172B4D;">Step 8: Microsoft Outlook Setup</h3>
+    <ol>
+      <li>Read through what to expect when you connect your Office 365 inbox to TechFlow, then click Continue.</li>
+      <li>You'll be prompted to log in to your Office 365 account. Enter the email address of the Office 365 account you want to use.</li>
+      <li>You'll be redirected back to your settings where the connection will be verified and completed.</li>
+    </ol>
+
+    <div style="background:#F0F3FF; padding:20px; border-radius:6px; margin-top:25px;">
+      <h4 style="color:#0052CC; margin-top:0;">Pro Tips</h4>
+      <ul>
+        <li>Install the add-in for Outlook (Windows/PC) to use TechFlow in your Outlook</li>
+        <li>Install the extension for Google Chrome to use TechFlow in your Gmail</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- System Status -->
+  <div style="background:linear-gradient(135deg, #36B37E, #57D9A3); padding:20px; border-radius:8px; color:white; margin-bottom:30px; display:flex; align-items:center; gap:12px;">
+   
+    <div>
+      <h3 style="color:white; margin:0;">All Systems Operational</h3>
+      <p style="margin:0; color:#E6FCFF;">All TechFlow services are running normally. Last updated: Just now</p>
+    </div>
+  </div>
+
+  <!-- Contact Support -->
+  <div style="background:#FFF4E5; padding:25px; border-radius:8px; border-left:4px solid #FFAB00; margin-bottom:30px;">
+    <h2 style="color:#172B4D; margin-top:0; display:flex; align-items:center; gap:8px;">
+      Need More Help?
+    </h2>
+    <p style="color:#666; margin-bottom:20px;">If you can't find what you need in our knowledge base, log a ticket directly in Freshdesk for faster support.</p>
+    
+    <div style="display:flex; gap:15px; flex-wrap:wrap;">
+      <a href="https://techflow.freshdesk.com/support/tickets/new" 
+         style="background-color:#DE350B; color:white; padding:14px 28px; border-radius:6px; text-decoration:none; font-weight:600; display:inline-flex; align-items:center; gap:8px; box-shadow:0 2px 4px rgba(222,53,11,0.3); transition:all 0.3s ease;" 
+         onmouseover="this.style.backgroundColor='#BF2600'; this.style.transform='translateY(-2px)';" 
+         onmouseout="this.style.backgroundColor='#DE350B'; this.style.transform='translateY(0)';">
+          Log a Ticket in Freshdesk
+      </a>
+      
+      <a href="tel:1-800-TECHFLOW" 
+         style="background-color:#0052CC; color:white; padding:14px 28px; border-radius:6px; text-decoration:none; font-weight:600; display:inline-flex; align-items:center; gap:8px; box-shadow:0 2px 4px rgba(0,82,204,0.3); transition:all 0.3s ease;" 
+         onmouseover="this.style.backgroundColor='#0747A6'; this.style.transform='translateY(-2px)';" 
+         onmouseout="this.style.backgroundColor='#0052CC'; this.style.transform='translateY(0)';">
+          Call Support: 1-800-TECHFLOW
+      </a>
+
+      <a href="mailto:finance@techflow.com" 
+         style="background-color:#36B37E; color:white; padding:14px 28px; border-radius:6px; text-decoration:none; font-weight:600; display:inline-flex; align-items:center; gap:8px; box-shadow:0 2px 4px rgba(54,179,126,0.3); transition:all 0.3s ease;" 
+         onmouseover="this.style.backgroundColor='#228759'; this.style.transform='translateY(-2px)';" 
+         onmouseout="this.style.backgroundColor='#36B37E'; this.style.transform='translateY(0)';">
+         Billing Help: finance@techflow.com
+      </a>
+    </div>
+    
+    <div style="margin-top:15px; font-size:14px; color:#5E6C84; display:flex; align-items:center; gap:8px;">
+      <img src="https://cdn-icons-png.flaticon.com/512/9421/9421190.png" width="16" height="16">
+      <strong>Support Hours:</strong> Mon-Fri 8:00 AM - 8:00 PM EST | Emergency 24/7 support available for critical issues
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div style="text-align:center; padding:20px; border-top:1px solid #DFE1E6; color:#5E6C84; font-size:14px;">
+    <p style="margin:0;">
+      © 2024 TechFlow Solutions. All rights reserved. 
+      <a href="/display/SUPPORT/Privacy+Policy" style="color:#0052CC; text-decoration:none;">Privacy Policy</a> • 
+      <a href="/display/SUPPORT/Terms+of+Service" style="color:#0052CC; text-decoration:none;">Terms of Service</a> • 
+      <a href="/display/SUPPORT/Service+Status" style="color:#0052CC; text-decoration:none;">Service Status</a> •
+      <a href="https://techflow.freshdesk.com" style="color:#0052CC; text-decoration:none;">Freshdesk Portal</a>
+    </p>
+  </div>
+
+</div>
+
+<style>
+.faq-category {
+  margin-bottom: 25px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.faq-item {
+  margin-bottom: 10px;
+  border: 1px solid #DFE1E6;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.faq-question {
+  background: #F4F5F7;
+  padding: 15px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #172B4D;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.faq-question:hover {
+  background: #E4E6EA;
+}
+
+.faq-answer {
+  padding: 0 15px;
+  max-height: 0;
+  overflow: hidden;
+  background: white;
+  transition: all 0.3s ease;
+  color: #5E6C84;
+  line-height: 1.5;
+}
+
+.faq-answer.show {
+  padding: 15px;
+  max-height: 500px;
+}
+
+.highlight {
+  background-color: #FFEB3B;
+  font-weight: bold;
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+</style>
+
+<script>
+// Tab switching functionality
+function showTab(tabName) {
+  // Hide all tab contents
+  document.getElementById('accounts-content').style.display = 'none';
+  document.getElementById('crm-content').style.display = 'none';
+  document.getElementById('technical-content').style.display = 'none';
+  document.getElementById('billing-content').style.display = 'none';
+  document.getElementById('faqs-content').style.display = 'none';
+  document.getElementById('support-content').style.display = 'none';
+  
+  // Reset all tab buttons to inactive state
+  const tabs = ['accounts', 'crm', 'technical', 'billing', 'faqs', 'support'];
+  tabs.forEach(tab => {
+    document.getElementById(tab + '-tab').style.background = '#E4E6EA';
+    document.getElementById(tab + '-tab').style.color = '#42526E';
+  });
+  
+  // Show selected tab content
+  document.getElementById(tabName + '-content').style.display = 'block';
+  
+  // Activate selected tab button
+  const activeColors = {
+    'accounts': '#0052CC',
+    'crm': '#36B37E', 
+    'technical': '#6554C0',
+    'billing': '#FF5630',
+    'faqs': '#00B8D9',
+    'support': '#FF8B00'
+  };
+  
+  document.getElementById(tabName + '-tab').style.background = activeColors[tabName];
+  document.getElementById(tabName + '-tab').style.color = 'white';
+}
+
+// FAQ toggle functionality
+function toggleFAQ(element) {
+  const answer = element.nextElementSibling;
+  const isShowing = answer.classList.contains('show');
+  
+  // Close all other FAQs
+  document.querySelectorAll('.faq-answer').forEach(faq => {
+    faq.classList.remove('show');
+  });
+  
+  // Toggle current FAQ
+  if (!isShowing) {
+    answer.classList.add('show');
+  }
+}
+
+// FAQ search functionality
+function searchFAQs() {
+  const input = document.getElementById('faqSearch');
+  const filter = input.value.toLowerCase();
+  const categories = document.querySelectorAll('.faq-category');
+  
+  categories.forEach(category => {
+    let hasVisibleItems = false;
+    const items = category.querySelectorAll('.faq-item');
+    
+    items.forEach(item => {
+      const question = item.querySelector('.faq-question').textContent.toLowerCase();
+      const answer = item.querySelector('.faq-answer').textContent.toLowerCase();
+      
+      if (question.includes(filter) || answer.includes(filter)) {
+        item.style.display = 'block';
+        hasVisibleItems = true;
+        
+        // Highlight matching text
+        if (filter) {
+          highlightText(item, filter);
+        } else {
+          removeHighlights(item);
+        }
+      } else {
+        item.style.display = 'none';
+      }
+    });
+    
+    // Show/hide category based on visible items
+    category.style.display = hasVisibleItems ? 'block' : 'none';
+  });
+}
+
+function highlightText(element, text) {
+  removeHighlights(element);
+  const walker = document.createTreeWalker(
+    element,
+    NodeFilter.SHOW_TEXT,
+    null,
+    false
+  );
+  
+  let node;
+  while (node = walker.nextNode()) {
+    const parent = node.parentNode;
+    if (parent.nodeName === 'SPAN' && parent.className === 'highlight') continue;
+    
+    const content = node.textContent;
+    const index = content.toLowerCase().indexOf(text);
+    if (index >= 0) {
+      const before = content.substring(0, index);
+      const match = content.substring(index, index + text.length);
+      const after = content.substring(index + text.length);
+      
+      const highlight = document.createElement('span');
+      highlight.className = 'highlight';
+      highlight.textContent = match;
+      
+      parent.replaceChild(document.createTextNode(before), node);
+      parent.insertBefore(highlight, parent.firstChild.nextSibling);
+      parent.insertBefore(document.createTextNode(after), highlight.nextSibling);
+    }
+  }
+}
+
+function removeHighlights(element) {
+  const highlights = element.querySelectorAll('.highlight');
+  highlights.forEach(highlight => {
+    const parent = highlight.parentNode;
+    parent.replaceChild(document.createTextNode(highlight.textContent), highlight);
+    parent.normalize();
+  });
+}
+
+// Initialize with Accounts tab active
+showTab('accounts');
+</script>
